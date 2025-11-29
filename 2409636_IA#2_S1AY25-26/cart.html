@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"></head>
+
+<body>
+    <header class="header">
+        <div class="top" text-align="margin-right;">
+            <nav role="navigation" aria-label="Main Navigation">
+                <ul>
+                    <li><a href="mainpage.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="login.html">Login Now</a></li>
+                    <li><a href="cart.html"><ion-icon name="cart-outline"></ion-icon></a></li>
+                </ul>
+            </nav>
+        </div>
+        <h1>Cart</h1>
+        <p>Your selected treats.</p>
+    </header>
+
+<main class="products-section">
+    <section class="cart-container">
+        <h2>Your Cart</h2>
+
+        <div id="emptyMessage" class="cart-empty" style="display: none;">
+            <p>Your cart is empty. Visit the <a href="products.html">Products</a> page to add something delicious.</p>                
+        </div>
+
+        <div id="cartTableWrap" style="display: none;">
+            <div id="cart-items" class="cart-items-container"></div>
+
+            <div class="cartSummary">
+                <div class="summary-line"><span>Subtotal</span><span id="cart-total">$0.00</span></div>
+                <div class="summary-line"><span>Shipping</span><span id="shipping">$0.00</span></div>
+                <div class="summary-total"><span>Total</span><span id="total">$0.00</span></div>
+                <div class="cart-actions">
+                    <button id="continueBtn" class="cart-add">Continue Shopping</button>
+                    <button id="checkoutBtn" class="cart-add">Proceed to Checkout</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+    <footer></footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>
